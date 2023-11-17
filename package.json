@@ -1,0 +1,49 @@
+{
+  "name": "base-service",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.prod.json",
+    "start": "node -r dotenv/config dist/src index.js",
+    "start:dev": "nodemon -r dotenv/config --exec ts-node ./src/index.ts",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.4",
+    "@types/koa-cache-control": "^2.0.3",
+    "@types/koa-multer": "^1.0.1",
+    "@types/koa-session": "^5.10.4",
+    "@types/koa__cors": "^3.1.1",
+    "@types/node": "^17.0.7",
+    "@types/uuid": "^8.3.4",
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15",
+    "ts-jest": "^27.1.2"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/multer": "^3.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "dotenv": "^11.0.0",
+    "http-status-code": "^2.1.0",
+    "inversify": "^6.0.1",
+    "inversify-inject-decorators": "^3.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.4",
+    "koa-cache-control": "^2.0.0",
+    "koa-helmet": "^6.1.0",
+    "koa-session": "^6.2.0",
+    "koajs-nocache": "^2.1.0",
+    "multer": "^1.4.4",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.9.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.5.4",
+    "uuid": "^8.3.2"
+  }
+}

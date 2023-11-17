@@ -1,0 +1,17 @@
+dist/
+node_modules/
+.vscode/
+.scannerwork/
+.idea
+out/
+dist/
+yarn.lock
+coverage/
+.env*
+.npm
+typings/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log
+start_local.sh
